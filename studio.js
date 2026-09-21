@@ -178,7 +178,7 @@
     var timer = null;
     var onScreen = false;
     var held = false;
-    var INTERVAL = 3800;
+    var INTERVAL = 3000;    /* ms each still stays up */
 
     function advance() {
       var base = slides[nextSlide];
