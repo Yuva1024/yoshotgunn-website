@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yo! ShotGunn — W ONES</title>
+<meta name="description" content="A 1v4 asymmetrical horror-comedy FPS. Get the job. Survive the shift. By W ONES. Coming to Steam, 2027.">
+<meta property="og:title" content="Yo! ShotGunn — Get the job. Survive the shift.">
+<meta property="og:description" content="A 1v4 slapstick horror-comedy where mysterious job offers lure unsuspecting survivors into chaotic deadly games, pitting four survivors against a unique shotgun-wielding Hunter on every map. Coming to Steam, 2027.">
+<meta property="og:image" content="assets/hero-mansion.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#08080a">
+<link rel="icon" href="assets/mark-wones.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&amp;family=Josefin+Sans:wght@700&amp;display=swap">
+<!-- the backdrop and the logo are the first things on screen: fetch them
+     before the stylesheet has even been parsed -->
+<link rel="preload" as="image" href="assets/bg-game-sm.webp" media="(max-width: 760px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/bg-game.webp" media="(min-width: 761px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/logo-game-700.webp"
+      imagesrcset="assets/logo-game-700.webp 700w, assets/logo-game.webp 1400w"
+      imagesizes="(max-width: 550px) 220px, (max-width: 1400px) 40vw, 560px" fetchpriority="high">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- the mansion stays put; everything else scrolls over it -->
+<div class="site-bg" aria-hidden="true"></div>
+
+<div class="site">
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav" aria-label="Main">
+  <a class="nav__studio" href="index.html" aria-label="W ONES studio home">
+    <img class="nav__mark" src="assets/mark-wones.png" alt="">
+  </a>
+  <a class="nav__brand" href="#top">
+    <img class="nav__logo" src="assets/logo-game-700.webp" alt="Yo! ShotGunn" width="700" height="298">
+  </a>
+  <div class="nav__links" id="navLinks">
+    <a href="#footage">Footage</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#maps">Maps</a>
+    <a href="index.html">Studio</a>
+  </div>
+  <a class="btn btn--sm nav__cta" href="#wishlist" aria-label="Wishlist on Steam">Wishlist<span class="nav__cta-long">on Steam</span></a>
+  <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks">
+    <span class="nav__toggle-bars" aria-hidden="true"></span>
+    <span class="visually-hidden">Menu</span>
+  </button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero__scrim"></div>
+  <div class="hero__inner">
+    <img class="hero__logo" src="assets/logo-game-700.webp" srcset="assets/logo-game-700.webp 700w, assets/logo-game.webp 1400w" sizes="(max-width: 550px) 220px, (max-width: 1400px) 40vw, 560px" alt="Yo! ShotGunn" width="1400" height="597">
+    <h1 class="hero__tag"><span class="hero__clause">Get the job.</span> <span class="hero__clause">Survive the shift.</span></h1>
+    <p class="hero__sub">A 1v4 slapstick horror-comedy where mysterious job offers lure unsuspecting survivors into chaotic deadly games, pitting four survivors against a unique shotgun-wielding Hunter on every map.</p>
+    <div class="hero__cta">
+      <a class="btn" href="#wishlist">Wishlist on Steam</a>
+      <a class="btn btn--ghost" href="#footage">Watch it go wrong &rarr;</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ FOOTAGE ============ -->
+<!--
+  The two clips below load from assets/clips/. To add another, copy one
+  <figure class="reel"> block, point data-src / data-poster at the new
+  file, and write its caption. MP4 (H.264) plays everywhere.
+-->
+<section class="band" id="footage">
+  <div class="wrap">
+    <header class="head-split">
+      <div>
+        <p class="eyebrow">Footage</p>
+        <h2 class="display">Watch it<br>go wrong.</h2>
+      </div>
+      <p class="lede">Everything in the room is ammunition, every death is a physics event, and nothing about it is dignified. Here is what that actually looks like.</p>
+    </header>
+
+    <div class="reels">
+
+      <figure class="reel" data-src="assets/clips/slip.mp4" data-poster="assets/clips/slip.webp">
+        <div class="reel__frame" style="background-image:url(assets/clips/slip.webp)">
+          <div class="reel__empty">
+            <span class="reel__play" aria-hidden="true"></span>
+            <span class="reel__soon">Footage coming</span>
+          </div>
+        </div>
+        <figcaption class="reel__cap">
+          <span class="reel__tag">HAZARD</span>
+          <h3 class="reel__t">The Slip</h3>
+          <p>A banana peel is thirty Stun Damage with a punchline attached. Sprint over it and the Hunter's legs leave without him.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="reel" data-src="assets/clips/steal.mp4" data-poster="assets/clips/steal.webp">
+        <div class="reel__frame" style="background-image:url(assets/clips/steal.webp)">
+          <div class="reel__empty">
+            <span class="reel__play" aria-hidden="true"></span>
+            <span class="reel__soon">Footage coming</span>
+          </div>
+        </div>
+        <figcaption class="reel__cap">
+          <span class="reel__tag">THE STEAL</span>
+          <h3 class="reel__t">Taking the Key</h3>
+          <p>A hundred Stun Damage puts him on the floor for fifteen seconds. Six of those are spent holding <span class="mono">E</span> on his hip, praying nobody wakes him up early.</p>
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="band band--crypt" id="gallery">
+  <div class="wrap">
+    <header class="head-split">
+      <div>
+        <p class="eyebrow">Gallery</p>
+        <h2 class="display">Stills from<br>the Mansion.</h2>
+      </div>
+      <p class="lede">Captured in engine, in the map you can already play. Select any frame to see it full size.</p>
+    </header>
+
+    <div class="gallery">
+      <button class="shot" type="button" data-full="assets/gallery/shot-01.webp" style="background-image:url(data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAwCdASoYAA4APt1cp0yopSOiMAgBEBuJQBOmUAA0tbz/gReYcQAA/oDdGAe5lr805XnVfSiTuEmtw96IiUzs1jubGeL3fkgIkYhxdmndkqmaLYAAAA==)">
+        <img src="assets/gallery/shot-01-sm.webp"
+             srcset="assets/gallery/shot-01-sm.webp 640w, assets/gallery/shot-01.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="A Survivor in a bear costume alone in the mansion lounge">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-02.webp" style="background-image:url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBACdASoYAA4APt1cpkyopSOiMAgBEBuJQBOgBCSCBdHluUE88G3EAAD+byNsj8bE4ZZ+Ge2eHNGVXL7f2fBm7jgsIM1O/oaZ22ODqI3MzKkWBh0BxeK4X7QKtfbNRpyJjAHiyOYf6AAA)">
+        <img src="assets/gallery/shot-02-sm.webp"
+             srcset="assets/gallery/shot-02-sm.webp 640w, assets/gallery/shot-02.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="Someone has already died on this sofa">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-03.webp" style="background-image:url(data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADwAwCdASoYAA4APt1epkyopSOiMAgBEBuJYwAAV/tTbwYGXenJS2IAAP70NJbhQbLwlNMZwrAh2+g7gHvoXQgSwORTFqWAD1jA9WwZ9hYD9Mw00P3cwlatconKAQZ2L+dB8DH0VRzQsi/ci+DLmxgEXAA=)">
+        <img src="assets/gallery/shot-03-sm.webp"
+             srcset="assets/gallery/shot-03-sm.webp 640w, assets/gallery/shot-03.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="The mansion drive at night, blunderbuss raised">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-04.webp" style="background-image:url(data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABwBACdASoYAA4APt1cpkyopSOiMAgBEBuJbACdMoADTo56VGpdleTz/n9UAAD+7JwXYh8C+aGk6epy/DkM9KRIbCD7pTfeMJ5LCevEC0H2/GPwvIeNZHLSf/kDqaeCPvt+gysHcvNTIKX+TdSAyLcGrSH71DM3ASsB08lHUK9HHtcZolyAAA==)">
+        <img src="assets/gallery/shot-04-sm.webp"
+             srcset="assets/gallery/shot-04-sm.webp 640w, assets/gallery/shot-04.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="The Hunter's view down a chandelier-lit hallway">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-05.webp" style="background-image:url(data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABQBACdASoYAA4APt1apkyopSOiMAgBEBuJaACdMoACshYj0pXh5UkfNfiAAP55NiVb8rfYS+/WmNHGzqInTAb91kykqmRCBld7d5E9B6+6I7lLbhRzaoKkOoVcNP0PrSnvUucJKXENMCoYlq7QJRxUazh7WsEX3H7z4dmaUoaZlDcZQmtXDI1bQ4H8oEJagAA=)">
+        <img src="assets/gallery/shot-05-sm.webp"
+             srcset="assets/gallery/shot-05-sm.webp 640w, assets/gallery/shot-05.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="The Hunter catches a Survivor against the furniture">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-06.webp" style="background-image:url(data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABQBACdASoYAA4APt1apkyopSOiMAgBEBuJagCdL1zKgBOwMbeP7ywcMeHAANwQYRVnVj6gNIWDJnvHxguvZ/ing1WbuyNrbPeTaCQ06lfBrKIIN/ikoCdrJYGexOgRDUxlZbtbApuY8LgKXcCj0M8eeZr+cwgLtbZp8hY9oSb1vcy/ZRdckc3N0BOFbuAAAAA=)">
+        <img src="assets/gallery/shot-06-sm.webp"
+             srcset="assets/gallery/shot-06-sm.webp 640w, assets/gallery/shot-06.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="A Survivor ragdolled across the sofa">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-07.webp" style="background-image:url(data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABQBACdASoYAA4APt1apkyopSOiMAgBEBuJQBOmUABWDXeWP1WEBY9pe5BQAJ+g6WJH3fzedWvb90Gy4dGMSKHsKdmOjW4NdLhCl5aIs4V5gZ0hTlugBOJIzWEkxzEms6IzDMswzoWFHSxapeaHSutNuF8J3UX/5j8zv/qjgAA=)">
+        <img src="assets/gallery/shot-07-sm.webp"
+             srcset="assets/gallery/shot-07-sm.webp 640w, assets/gallery/shot-07.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="The Hunter face down on the rug after a knockdown">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-08.webp" style="background-image:url(data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA4APt1cpkyopSOiMAgBEBuJbACdMoO4AAiVJD6v9bEJFJCzBAD+8W1P1Ut04psST9saIeQs/0luLRLk3fnc1dSt5fLYVmM0ZX7QeqXwBvYcFQ+u1kteq3yVBX3T4KZIf8MBJDcj19vkeQRJ/0dFFsT2+LpvlyuonfyMTzKxHOKlvHAAAA==)">
+        <img src="assets/gallery/shot-08-sm.webp"
+             srcset="assets/gallery/shot-08-sm.webp 640w, assets/gallery/shot-08.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="Two Survivors caught in the open lounge">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-09.webp" style="background-image:url(data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADwAwCdASoYAA4APt1apkyopSOiMAgBEBuJZQC+SB57T8SYG1tG2u8IAP7ppMK5Y+h5TGPwn04+r/XftfwuWzl01fNvQHPF6C0ebK29zyQXGKeCwbyPM1lGUVBcISV8DvwokC9z32ZwxeXJWKig+zUo0aAAAA==)">
+        <img src="assets/gallery/shot-09-sm.webp"
+             srcset="assets/gallery/shot-09-sm.webp 640w, assets/gallery/shot-09.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="Looking up at the atrium skylight">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-10.webp" style="background-image:url(data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBACdASoYAA4APt1cpkyopSOiMAgBEBuJaACdMoAC+8TwDunldVWpGAD+7IKfdyq9GzzaKnx5Bj1qbjrnkyNJ4CLTDR1hfT3+9N67d8y5GAD8g3BxBp8fU+hCDUqp0U+JuUtlp0K2SdGN9xI/Esx1SLdRx97NVayEFAAA)">
+        <img src="assets/gallery/shot-10-sm.webp"
+             srcset="assets/gallery/shot-10-sm.webp 640w, assets/gallery/shot-10.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="A Survivor sprinting for the next room">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-11.webp" style="background-image:url(data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAwBACdASoYAA4APt1cp0yopSOiMAgBEBuJbACdMoR4GCIdKwdrBTjLs4IA/vGjnJcRd0VL4Q5XaHgFSTIDanc8IOdZhG3OScNA+UZfwPgbJLagiGDtpftQ/zuC1UOh9TOla7amCfC8vWQWajqxJc24tPRpFPfKNPLepoHzkX0ICXKh0DMZlONhWd+QTEDU+S6KzI0FAdEwAAAA)">
+        <img src="assets/gallery/shot-11-sm.webp"
+             srcset="assets/gallery/shot-11-sm.webp 640w, assets/gallery/shot-11.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="Two Survivors regrouping around the coffee table">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-12.webp" style="background-image:url(data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoYAA4APt1cpkyopSOiMAgBEBuJbACdMoRwACZh2crkxnKnggAA/tvgmTndI7pIJW0yq5NuMV2zdZyjiU8Nckm7pnen7h215P6WzSeGitkX0DAXaLXHhN5PZVaHbbeUXK5QIBfQAAA=)">
+        <img src="assets/gallery/shot-12-sm.webp"
+             srcset="assets/gallery/shot-12-sm.webp 640w, assets/gallery/shot-12.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="A Survivor lit up mid-revive">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-13.webp" style="background-image:url(data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwBACdASoYAA4APt1eqE0opSQiMAgBEBuJZgCdL1yB0jTXmQUW7KuhOsAA/u6IRwzP5cGgdRrtx9S2in/Ri5ZmtWgw+sP0iChRw6+kdT5kJGIf/0AjF+CMp+YiWgAA)">
+        <img src="assets/gallery/shot-13-sm.webp"
+             srcset="assets/gallery/shot-13-sm.webp 640w, assets/gallery/shot-13.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="Watching the landing from a doorway">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-14.webp" style="background-image:url(data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQBACdASoYAA4APt1cp0yopSOiMAgBEBuJQBOmUI7gBTqDhgksbKr2mYAAAP7Yym4v/lLgeu3vqvSCHpRT85F0tlGVjNcVk6d+9bTDHzebdAKp1SaXoMhibmXIqcTY1UD4Z5pAAAA=)">
+        <img src="assets/gallery/shot-14-sm.webp"
+             srcset="assets/gallery/shot-14-sm.webp 640w, assets/gallery/shot-14.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="The Hunter, close enough to count the pellets">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-15.webp" style="background-image:url(data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAACwBACdASoYAA4APt1qqU4opqQiMAgBEBuJbACdMoR4GCUMlFcaf7frnUYPC5mAAP7qIXB19ezOQZEzFzk+CDQUoAxvY3vM4h8C1PORW7O3elMKY98C0BWOVU9HgEOjZiY5WJfEqmGpRDy2g3qdBGVU01jXRpLjW+RfvoZolN5gPc9BAAA=)">
+        <img src="assets/gallery/shot-15-sm.webp"
+             srcset="assets/gallery/shot-15-sm.webp 640w, assets/gallery/shot-15.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="A Survivor at the boarded main door">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-16.webp" style="background-image:url(data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADQBACdASoYAA4APt1apkyopSOiMAgBEBuJZgC7MoMYJn/Ac8WhtDan4xnpWKDIQAD+7t6/n+lCPq+zNHptytRvZU7kZvbHRWOHYfGWV091bfDWWJp6XIZWOcHKQTlNgICbQGZD88dwJ3gsKGvrmjMNpJHCdj32LDe1M0AA)">
+        <img src="assets/gallery/shot-16-sm.webp"
+             srcset="assets/gallery/shot-16-sm.webp 640w, assets/gallery/shot-16.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="Planks across the stained glass, hammer in hand">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-17.webp" style="background-image:url(data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQBACdASoYAA4APt1cp0yopSOiMAgBEBuJbACdL1ABo636r7uRso01hnIAAP7SpXGYegRt+eIuBfhsbwdV7rWTPHsewhd2LGADH1Iyg5f5p9sueKKlKcBRZKfctU4O459/Z/5733E7w2/dstgd5EUTQxqi93nHSsX/r5JESY3k3CNh8TEwAA==)">
+        <img src="assets/gallery/shot-17-sm.webp"
+             srcset="assets/gallery/shot-17-sm.webp 640w, assets/gallery/shot-17.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="Working the last nails out of the door">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-18.webp" style="background-image:url(data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABwBACdASoYAA4APt1apkyopSOiMAgBEBuJbACdL1yB0p9ucZh+bEd7OpjAKAD+2lTQxElbXG3ChmT/r/HNibXkVYF4sG1R3oqQHmpdTYveJOxyj8GMexGYi3V6VSGWPqnso77l620Ydq3j00BCZxJcvcuAAA==)">
+        <img src="assets/gallery/shot-18-sm.webp"
+             srcset="assets/gallery/shot-18-sm.webp 640w, assets/gallery/shot-18.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="Carrying something heavy past the exit">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-19.webp" style="background-image:url(data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoYAA4APt1cpkyopSOiMAgBEBuJbACdMoRwABuJO1uEinRAAP7phcjYVkKxIXYhmwi6nWB8VANkjx1ijFRxNeltRzkU+D/a0KzGh2Pt17SVnDr3U5fcVdkpMrH8Z3jSWWh5N4ewQwAAAA==)">
+        <img src="assets/gallery/shot-19-sm.webp"
+             srcset="assets/gallery/shot-19-sm.webp 640w, assets/gallery/shot-19.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="Two Survivors climbing to the keypad">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-20.webp" style="background-image:url(data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASoYAA4APt1apkyopSOiMAgBEBuJYgCw7CG7uEKHGcJN+jmwAAD+4vUHSqfLTNAJ7cAT6O0OSNthzv7QIHnatj5KW/f/kcy7MRCsTGRj1sUBLj5WlYAAAA==)">
+        <img src="assets/gallery/shot-20-sm.webp"
+             srcset="assets/gallery/shot-20-sm.webp 640w, assets/gallery/shot-20.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="Knocked down against the wallpaper">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-21.webp" style="background-image:url(data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQBACdASoYAA4APt1qqU4opqQiMAgBEBuJYgCdMoR3AB57ZRoK1kBusAD+jSF1TLBkw7oms65FxKoYW9mldnDIJxeeWLO6/oIOx1R22lC0/uxiJIMAAA==)">
+        <img src="assets/gallery/shot-21-sm.webp"
+             srcset="assets/gallery/shot-21-sm.webp 640w, assets/gallery/shot-21.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="The four-digit keypad on the main door">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-22.webp" style="background-image:url(data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQBACdASoYAA4APt1cpkyopSOiMAgBEBuJbACdMoACssRlhLUMXKgPQAD+6Oy2TBa2Rpav2s/52+k7HG/engm4QpX0J1K/qDI17ZvLl0KhZiOh6vufyD+sBkdQer4PdrEcGFl+1t9dMXGnsup3zYOtf9aAAA==)">
+        <img src="assets/gallery/shot-22-sm.webp"
+             srcset="assets/gallery/shot-22-sm.webp 640w, assets/gallery/shot-22.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="The door opens onto the night">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-23.webp" style="background-image:url(data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAwCdASoYAA4APt1cp0yopSOiMAgBEBuJZwAASduKKBPw1Hu2zgAA/uz2IhDxYPoeT1fxwL4zzPZExtyUTOr5y2Y6urr7OPUUGP68dyuxM3V2+2+XHAl24aDhAAAA)">
+        <img src="assets/gallery/shot-23-sm.webp"
+             srcset="assets/gallery/shot-23-sm.webp 640w, assets/gallery/shot-23.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="Running for the gate">
+      </button>
+      <button class="shot" type="button" data-full="assets/gallery/shot-24.webp" style="background-image:url(data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoYAA4APt1apkyopSOiMAgBEBuJYgCsACGqaSFwqTT48AAA/kCCIQASusiTjM9rERou3og/iXJc55qgyE1sR6GAHFeRkp5xDbZsfAmuZhKkjGaQbEJm7A5pvqpMjVGbTWsxpD5zXwgAAA==)">
+        <img src="assets/gallery/shot-24-sm.webp"
+             srcset="assets/gallery/shot-24-sm.webp 640w, assets/gallery/shot-24.webp 1600w"
+             sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
+             loading="lazy" decoding="async" width="1600" height="900"
+             alt="Out through the fence, still running">
+      </button>
+    </div>
+  </div>
+</section>
+
+<dialog class="lightbox" id="lightbox" aria-label="Screenshot viewer">
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox__bar">
+    <div class="lightbox__controls">
+      <span class="lightbox__count mono" id="lightboxCount"></span>
+      <button class="lightbox__btn" id="lightboxPrev" type="button" aria-label="Previous screenshot">&#8249;</button>
+      <button class="lightbox__btn" id="lightboxNext" type="button" aria-label="Next screenshot">&#8250;</button>
+      <button class="lightbox__btn" id="lightboxClose" type="button" aria-label="Close viewer">&#215;</button>
+    </div>
+  </div>
+</dialog>
+
+<!-- ============ MAPS ============ -->
+<section class="band" id="maps">
+  <div class="wrap">
+    <p class="eyebrow">Maps &amp; Content</p>
+    <h2 class="display">Two maps<br>so far.</h2>
+
+    <div class="maps">
+      <article class="map">
+        <div class="map__shot">
+          <img src="assets/hero-mansion-sm.webp" srcset="assets/hero-mansion-sm.webp 1100w, assets/hero-mansion.webp 2400w" sizes="(max-width: 900px) 100vw, 50vw" loading="lazy" alt="The Mansion at night, lit by sodium lamps">
+        </div>
+        <div class="map__body">
+          <h3 class="map__name">The Mansion</h3>
+        </div>
+      </article>
+
+      <article class="map">
+        <div class="map__shot">
+          <div class="map__blueprint"></div>
+        </div>
+        <div class="map__body">
+          <h3 class="map__name">The Luxury Penthouse</h3>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROSTER ============ -->
+<section class="band band--crypt" id="roster">
+  <div class="wrap">
+    <p class="eyebrow">The Roster</p>
+    <h2 class="display">Ten survivors.<br>Six in the lineup.</h2>
+    <p class="lede" style="margin-top:1.25rem">Ten distinct characters with increasingly poor costume decisions &mdash; and zero character-specific advantages. Everyone runs the same speed and dies the same way. Who you pick only decides how you look doing it. Any player can pick any character &mdash; tap a card to pull their file.</p>
+
+    <div class="roster">
+
+      <!-- REVEAL SLOTS. The back's <img> is the character art: drop a file at
+           that path and it shows on flip. Missing art falls back to a
+           "portrait pending" state instead of a broken image. -->
+      <button class="slot slot--flip" type="button" data-flipped="false" aria-pressed="false">
+        <span class="slot__inner">
+          <span class="slot__face slot__face--front">
+            <span class="slot__no">01</span>
+            <span class="slot__big" aria-hidden="true">01</span>
+            <span class="slot__cue">Tap to reveal</span>
+          </span>
+          <span class="slot__face slot__face--back">
+            <img src="assets/roster/banana-babu.webp" alt="Survivor 01, Banana Babu" loading="lazy" decoding="async">
+            <span class="slot__name">Banana Babu</span>
+          </span>
+        </span>
+      </button>
+
+      <button class="slot slot--flip" type="button" data-flipped="false" aria-pressed="false">
+        <span class="slot__inner">
+          <span class="slot__face slot__face--front">
+            <span class="slot__no">02</span>
+            <span class="slot__big" aria-hidden="true">02</span>
+            <span class="slot__cue">Tap to reveal</span>
+          </span>
+          <span class="slot__face slot__face--back">
+            <img src="assets/roster/crash-test-dummy.webp" alt="Survivor 02, Crash Test Dummy" loading="lazy" decoding="async">
+            <span class="slot__name">Crash Test Dummy</span>
+          </span>
+        </span>
+      </button>
+
+      <button class="slot slot--flip" type="button" data-flipped="false" aria-pressed="false">
+        <span class="slot__inner">
+          <span class="slot__face slot__face--front">
+            <span class="slot__no">03</span>
+            <span class="slot__big" aria-hidden="true">03</span>
+            <span class="slot__cue">Tap to reveal</span>
+          </span>
+          <span class="slot__face slot__face--back">
+            <img src="assets/roster/kitty-bhai.webp" alt="Survivor 03, Kitty Bhai" loading="lazy" decoding="async">
+            <span class="slot__name">Kitty Bhai</span>
+          </span>
+        </span>
+      </button>
+
+      <button class="slot slot--flip" type="button" data-flipped="false" aria-pressed="false">
+        <span class="slot__inner">
+          <span class="slot__face slot__face--front">
+            <span class="slot__no">04</span>
+            <span class="slot__big" aria-hidden="true">04</span>
+            <span class="slot__cue">Tap to reveal</span>
+          </span>
+          <span class="slot__face slot__face--back">
+            <img src="assets/roster/job-rejecty.webp" alt="Survivor 04, Job Rejecty" loading="lazy" decoding="async">
+            <span class="slot__name">Job Rejecty</span>
+          </span>
+        </span>
+      </button>
+
+      <!-- Not revealed at all yet. -->
+      <div class="slot slot--locked">
+        <span class="slot__no">05</span>
+        <span class="slot__q" aria-hidden="true">?</span>
+        <span class="slot__name">Classified</span>
+      </div>
+      <div class="slot slot--locked">
+        <span class="slot__no">06</span>
+        <span class="slot__q" aria-hidden="true">?</span>
+        <span class="slot__name">Classified</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ WISHLIST ============ -->
+<section class="cta" id="wishlist">
+  <div class="wrap">
+    <h2 class="cta__h">The job hunt<br>begins 2027.</h2>
+    <p class="cta__p">Wishlist on Steam and you will know the moment the jail door opens. Playable demo of The Mansion in the works.</p>
+    <div class="cta__row">
+      <a class="btn" href="#" data-needs-link="steam">Wishlist on Steam</a>
+      <a class="btn btn--ghost" href="#" data-needs-link="presskit">Press Kit</a>
+    </div>
+
+    <p class="social__lead">Come and watch it go wrong with us</p>
+    <ul class="social social--lg">
+      <li>
+        <a class="social__btn" href="https://discord.gg/mQPGaS2Mt" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.058a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.011c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.099.246.198.373.292a.077.077 0 0 1-.006.128 12.3 12.3 0 0 1-1.873.891.077.077 0 0 0-.41.107c.36.698.772 1.363 1.225 1.993a.076.076 0 0 0 .084.029 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.055c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.029ZM8.02 15.331c-1.183 0-2.157-1.086-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.095 2.157 2.419 0 1.333-.956 2.419-2.157 2.419Zm7.975 0c-1.183 0-2.157-1.086-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.095 2.157 2.419 0 1.333-.946 2.419-2.157 2.419Z"/></svg>
+          <span>Discord</span>
+        </a>
+      </li>
+      <li>
+        <a class="social__btn" href="https://www.instagram.com/w_ones.games/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z"/></svg>
+          <span>Instagram</span>
+        </a>
+      </li>
+      <li>
+        <a class="social__btn" href="https://www.youtube.com/@W_ONES" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814ZM9.545 15.568V8.432L15.818 12l-6.273 3.568Z"/></svg>
+          <span>YouTube</span>
+        </a>
+      </li>
+    </ul>
+
+    <p class="cta__fine">PC &middot; 1&ndash;5 players &middot; Steam</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__cols">
+      <a class="fcol fcol--brand" href="index.html">
+        <img class="fcol__mark" src="assets/mark-wones.png" alt="">
+        <span class="fcol__word">W ONES</span>
+      </a>
+      <div class="fcol">
+        <h4>Game</h4>
+        <a href="#footage">Footage</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#maps">Maps</a>
+      </div>
+      <div class="fcol">
+        <h4>Follow</h4>
+        <ul class="social">
+          <li>
+            <a class="social__btn" href="https://discord.gg/mQPGaS2Mt" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.058a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.011c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.099.246.198.373.292a.077.077 0 0 1-.006.128 12.3 12.3 0 0 1-1.873.891.077.077 0 0 0-.41.107c.36.698.772 1.363 1.225 1.993a.076.076 0 0 0 .084.029 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.055c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.029ZM8.02 15.331c-1.183 0-2.157-1.086-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.095 2.157 2.419 0 1.333-.956 2.419-2.157 2.419Zm7.975 0c-1.183 0-2.157-1.086-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.095 2.157 2.419 0 1.333-.946 2.419-2.157 2.419Z"/></svg>
+              <span>Discord</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__btn" href="https://www.instagram.com/w_ones.games/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z"/></svg>
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__btn" href="https://www.youtube.com/@W_ONES" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814ZM9.545 15.568V8.432L15.818 12l-6.273 3.568Z"/></svg>
+              <span>YouTube</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__btn" href="#" data-needs-link="steam">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.39 3.39 0 0 1 1.912-.59c.063 0 .125.003.188.005l2.861-4.142v-.06a4.525 4.525 0 1 1 4.524 4.527h-.105l-4.076 2.911c0 .052.004.105.004.158a3.4 3.4 0 0 1-6.748.66L.436 15.27C1.862 20.307 6.487 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.606 0 11.979 0ZM7.54 18.21l-1.473-.61a2.553 2.553 0 0 0 1.32 1.253 2.564 2.564 0 0 0 3.345-1.386 2.54 2.54 0 0 0 .002-1.95 2.543 2.543 0 0 0-1.388-1.392 2.56 2.56 0 0 0-1.97-.008l1.523.63a1.879 1.879 0 0 1-1.359 3.463Zm11.365-8.302a3.017 3.017 0 0 0-3.015-3.011 3.016 3.016 0 0 0-3.011 3.011 3.016 3.016 0 0 0 3.011 3.009 3.017 3.017 0 0 0 3.015-3.009Zm-5.273-.005a2.267 2.267 0 0 1 2.264-2.264 2.267 2.267 0 0 1 2.266 2.264 2.266 2.266 0 0 1-2.266 2.262 2.266 2.266 0 0 1-2.264-2.262Z"/></svg>
+              <span>Steam</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Press</h4>
+        <a href="#" data-needs-link="presskit">Press Kit</a>
+        <a href="#" data-needs-link="assets">Logos &amp; Screenshots</a>
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=thewonegames@gmail.com" target="_blank" rel="noopener">Media Enquiries</a>
+      </div>
+    </div>
+
+    <div class="footer__base">
+      <span>&copy; 2026 <span class="wones">W ONES</span>. <span class="gamename">Yo! ShotGunn</span> is a trademark of <span class="wones">W ONES</span>.</span>
+      <span>Coming to Steam 2027</span>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /.site -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

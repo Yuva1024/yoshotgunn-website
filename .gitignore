@@ -1,0 +1,11 @@
+# Source material kept out of the public site repo
+*.pdf
+*.pptx
+HighresScreenshot*.png
+Character Images/
+
+# Local tooling
+.claude/
+Thumbs.db
+desktop.ini
+.DS_Store
