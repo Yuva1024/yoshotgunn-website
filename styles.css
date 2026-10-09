@@ -27,7 +27,7 @@
   --line-soft: #1c1c23;
 
   /* ONE accent: gold. Everything else is neutral.
-     It is spent on the Wishlist action, on the Hunter and his threat,
+     It is spent on the main call to action, on the Hunter and his threat,
      and on a few single points of emphasis. Survivors, good outcomes
      and interface chrome stay in bone and ash. */
   --gold:       #e8bf4a;  /* accent as text or a rule: 11:1 on the ground */
@@ -186,11 +186,9 @@ h3.display { font-size: clamp(1.5rem, 2.6vw, 2rem); }
 
 /* Mobile first: the section links live in a panel under the bar,
    opened by .nav__toggle. From 1040px they sit inline in the bar. */
-.btn.nav__cta { margin-left: auto; gap: .35em; }
-.nav__cta-long { display: none; }
-@media (min-width: 560px) { .nav__cta-long { display: inline; } }
 
 .nav__toggle {
+  margin-left: auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -270,7 +268,6 @@ h3.display { font-size: clamp(1.5rem, 2.6vw, 2rem); }
   }
   .nav__links a:hover, .nav__links a:focus-visible { border-bottom-color: var(--bone); }
   .nav__links a[data-active="true"] { border-bottom-color: var(--gold); }
-  .nav__cta { margin-left: 0; }
 }
 
 /* ---------- buttons ---------- */
@@ -567,7 +564,7 @@ h3.display { font-size: clamp(1.5rem, 2.6vw, 2rem); }
    which would stack each icon above its label — restate it here. */
 .fcol .social__btn { display: inline-flex; }
 
-/* the large row under the wishlist call to action */
+/* the large row under the closing call to action */
 .social__lead {
   margin: 2.6rem 0 1.1rem;
   font-family: var(--ff-label);
